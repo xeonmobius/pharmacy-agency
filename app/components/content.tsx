@@ -51,12 +51,6 @@ export default function Component() {
             </p>
           </div>
         </div>
-        <Link
-          href="#"
-          className="mb-20 bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded items-center w-full"
-        >
-          Learn More
-        </Link>
       </div>
     </div>
   );
