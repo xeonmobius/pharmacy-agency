@@ -1,4 +1,7 @@
 import Link from "next/link";
+import IconClockCircle from "./clockIcon";
+import IconTrophy from "./trophyIcon";
+import IconBarcode from "./barcodeIcon";
 
 export default function Component() {
   return (
@@ -7,7 +10,7 @@ export default function Component() {
         <h1 className="text-4xl font-bold text-gray-800 dark:text-white mt-20 mb-10 text-center">
           Swift Script Partners - Who we are
         </h1>
-        <p className="text-xl text-gray-500 dark:text-gray-300 mb-10 px-6 text-center">
+        <p className="text-xl text-gray-500 dark:text-gray-300 mb-10 px-6 text-justify">
           Swift Script Partners specializes in delivering tailored staffing
           solutions, offering experienced pharmacists aligned with your specific
           needs and schedule. We are dedicated to consistently providing highly
@@ -20,34 +23,37 @@ export default function Component() {
           expansion of your enterprise.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4">
+          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 flex flex-col justify-between">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
               Excellent Service Time
             </h2>
+            <IconClockCircle className="text-white text-8xl justify-center w-full" />
             <p className="text-gray-500 dark:text-gray-300">
               Have a pharmacist appear at your location within the next 24 hours.
             </p>
           </div>
-          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4">
+          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 flex flex-col justify-between">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-              Service 2
+              Excellent Experienced Pharmacist 
             </h2>
+            <IconTrophy className="text-white text-8xl justify-center w-full"/>
             <p className="text-gray-500 dark:text-gray-300">
-              Details about Service 2.
+              Our Pharmacist have over 5 years of experience including on how to use Kroll and HealthWatch.
             </p>
           </div>
-          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4">
+          <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 flex flex-col justify-between">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-              Service 3
+              Expert Medication Inventory Management
             </h2>
+            <IconBarcode className="text-white text-8xl justify-center w-full"/>
             <p className="text-gray-500 dark:text-gray-300">
-              Details about Service 3.
+              Our Pharmacist are trained to reduce inventory cost and optimize inventory to meet your patient&aposs needs.
             </p>
           </div>
         </div>
         <Link
           href="#"
-          className="mb-20 bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded"
+          className="mb-20 bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded items-center w-full"
         >
           Learn More
         </Link>

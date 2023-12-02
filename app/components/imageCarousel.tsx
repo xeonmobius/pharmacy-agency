@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Component() {
   return (
-    <div className="flex justify-center items-center flex-col dark:bg-gray-800">
-      <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg mb-20">
+    <div className="flex justify-center items-center flex-col dark:bg-gray-800 h-full">
+      <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-lg mb-20 px-4">
         <div className="absolute inset-y-0 left-0 flex items-center">
           <Link
             href="#"
@@ -26,25 +26,13 @@ export default function Component() {
               alt="Service 1 Image"
               className="mb-4"
               height="384"
-              src="/placeholder.svg"
+              src="/walmart logo.svg"
               style={{
                 aspectRatio: "384/384",
-                objectFit: "cover",
+                objectFit: "contain",
               }}
               width="384"
             />
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
-              Service 1
-            </h2>
-            <p className="text-gray-500 dark:text-gray-300 mb-4">
-              Details about Service 1.
-            </p>
-            <Link
-              className="bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded"
-              href="#"
-            >
-              Learn More
-            </Link>
           </div>
         </div>
       </div>
