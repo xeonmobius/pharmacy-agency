@@ -26,7 +26,7 @@ export default function Component({ items }: Props) {
   };
 
   return (
-    <div className="w-full h-[75vh] max-w-6xl mx-auto px-4 flex flex-col justify-center">
+    <div className="w-full h-[60vh] max-w-6xl mx-auto px-4 flex flex-col justify-center">
       <Slider {...settings} className="py-20 my-20 h-full w-full">
         {items.map((item, index) => (
           <div key={index}>

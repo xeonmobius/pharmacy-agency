@@ -9,13 +9,13 @@ type Props = {
 export default function ContactModal({ setContactOpen }: Props) {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
-      <div className="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-lg w-full">
+      <div className="bg-white p-6 rounded-lg max-w-lg w-full">
         <div className="flex justify-between">
-          <h2 className="text-2xl font-bold text-gray-700 dark:text-white mb-4">
+          <h2 className="text-2xl font-bold text-gray-700 mb-4">
             Contact Form
           </h2>
           <h2
-            className="text-white text-2xl font-bold"
+            className= "text-2xl font-bold text-gray-700 cursor-pointer"
             onClick={() => setContactOpen(false)}
           >
             <IconCloseR />

@@ -10,13 +10,13 @@ export default function Navbar() {
   const [isContactOpen, setContactOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md dark:bg-gray-800">
+    <nav className="shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div>
               <Link href="#">
-                <div className="flex items-center py-4 px-2 mr-6 dark:hover:text-purple-500 transition duration-300 rounded dark:text-white">
+                <div className="flex items-center py-4 px-2 mr-6 hover:text-purple-500 transition duration-300 rounded">
                   <IconMortarPestlePlus className="h-20 w-20" />
                   Swiftscript Partners
                 </div>
@@ -24,31 +24,29 @@ export default function Navbar() {
             </div>
             <div className="hidden md:flex items-center space-x-1">
               <Link href="#">
-                <div className="py-2 px-2 text-gray-700 dark:hover:bg-gray-700 transition duration-300 rounded dark:text-white">
+                <div className="py-2 px-2 hover:bg-gray-200 transition duration-300 rounded">
                   Home
                 </div>
               </Link>
               <Link href="#">
-                <div className="py-2 px-2 text-gray-700 dark:hover:bg-gray-700 transition duration-300 rounded dark:text-white">
+                <div className="py-2 px-2 hover:bg-gray-200 transition duration-300 rounded">
                   About Us
                 </div>
               </Link>
               <Link href="#">
-                <div className="py-2 px-2 text-gray-700 dark:hover:bg-gray-700 transition duration-300 rounded dark:text-white">
+                <div className="py-2 px-2 hover:bg-gray-200 transition duration-300 rounded">
                   Services
                 </div>
               </Link>
               <Link href="#">
-                <div className="py-2 px-2 text-gray-700 dark:hover:bg-gray-700 transition duration-300 rounded dark:text-white">
+                <div className="py-2 px-2 hover:bg-gray-200 transition duration-300 rounded">
                   Testimonials
                 </div>
               </Link>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-3 ">
-            <button
-            onClick={() => setContactOpen(true)}
-            >
+            <button onClick={() => setContactOpen(true)}>
               <div className="py-2 px-3 bg-purple-600 text-white rounded hover:bg-purple-700 transition duration-300">
                 Contact Us
               </div>
@@ -60,7 +58,7 @@ export default function Navbar() {
               onClick={() => setOpen(!isOpen)}
             >
               <svg
-                className="w-12 h-12 px-2 py-2 dark:text-white dark:hover:bg-gray-700 transition duration-300"
+                className="w-12 h-12 px-2 py-2 text-black hover:bg-gray-200 transition duration-300 rounded"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -75,32 +73,32 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="absolute dark:bg-gray-800 z-50 w-full text-center">
+        <div className="absolute bg-gray-800 z-50 w-full text-center">
           <ul>
             <li>
               <Link href="#">
-                <div className="block text-sm px-2 py-4 dark:text-white bg-purple-500 font-semibold">
+                <div className="block text-sm px-2 py-4 text-white bg-purple-500 font-semibold">
                   Home
                 </div>
               </Link>
             </li>
             <li>
               <Link href="#">
-                <div className="block text-sm px-2 py-4 dark:text-white hover:bg-purple-500 transition duration-300">
+                <div className="block text-sm px-2 py-4 text-white hover:bg-purple-500 transition duration-300">
                   About Us
                 </div>
               </Link>
             </li>
             <li>
               <Link href="#">
-                <div className="block text-sm px-2 py-4 dark:text-white hover:bg-purple-500 transition duration-300">
+                <div className="block text-sm px-2 py-4 text-white hover:bg-purple-500 transition duration-300">
                   Services
                 </div>
               </Link>
             </li>
             <li>
               <Link href="#">
-                <div className="block text-sm px-2 py-4 dark:text-white hover:bg-purple-500 transition duration-300">
+                <div className="block text-sm px-2 py-4 text-white hover:bg-purple-500 transition duration-300">
                   Testimonials
                 </div>
               </Link>
@@ -108,7 +106,7 @@ export default function Navbar() {
             <li></li>
             <li>
               <Link href="#">
-                <div className="block text-sm px-2 py-4 dark:text-white hover:bg-purple-500 transition duration-300">
+                <div className="block text-sm px-2 py-4 text-white hover:bg-purple-500 transition duration-300">
                   Contact Us
                 </div>
               </Link>

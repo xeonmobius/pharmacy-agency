@@ -11,7 +11,7 @@ export default function Home() {
     { image: '/shoppers logo.svg', alt: 'Slide 3' },
   ];
   return (
-    <main>
+    <main className="bg-gray-100">
       <Navbar />
       <ImageCarousel items={carouselItems} />
       <Content />
