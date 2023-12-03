@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import IconMortarPestlePlus from "./companyIcon";
+import IconMortarPestlePlus from "./icons/companyIcon";
 import ContactModal from "./contactModal";
 import { useState } from "react";
 

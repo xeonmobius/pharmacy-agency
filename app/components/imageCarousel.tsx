@@ -38,7 +38,7 @@ export default function Component({ items }: Props) {
             />
             <Link
               href="#"
-              className="mb-20 bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded"
+              className="left-[50%] mb-20 bg-purple-600 text-white hover:bg-purple-700 transition duration-300 py-2 px-4 rounded"
             >
               Contact Us
             </Link>

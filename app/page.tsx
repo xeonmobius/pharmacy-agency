@@ -3,6 +3,7 @@ import Content from "./components/content"
 import Client from "./components/client"
 import ImageCarousel from "./components/imageCarousel"
 import ContactUsSection from "./components/contactUsSection"
+import Testimonals from "./components/testimonals"
 
 export default function Home() {
   const carouselItems = [
@@ -16,6 +17,7 @@ export default function Home() {
       <ImageCarousel items={carouselItems} />
       <Content />
       <Client />
+      <Testimonals />
       <ContactUsSection />
     </main>
   )

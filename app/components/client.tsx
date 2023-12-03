@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-export default function Client() {
+export default function Component() {
   return (
     <div className="flex justify-center items-center flex-col">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-800 mt-20 text-center">
           Our Clients
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="rounded-lg p-4">
             <Image
               alt="Walmart"

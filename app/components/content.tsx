@@ -1,7 +1,7 @@
 import Link from "next/link";
-import IconClockCircle from "./clockIcon";
+import IconClockCircle from "./icons/clockIcon";
 import IconTrophy from "./trophyIcon";
-import IconBarcode from "./barcodeIcon";
+import IconBarcode from "./icons/barcodeIcon";
 
 export default function Component() {
   return (

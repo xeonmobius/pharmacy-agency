@@ -1,6 +1,6 @@
 "use client";
 
-import IconCloseR from "./closeIcon";
+import IconCloseR from "./icons/closeIcon";
 
 type Props = {
   setContactOpen: (open: boolean) => void;
