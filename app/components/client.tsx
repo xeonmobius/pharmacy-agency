@@ -7,7 +7,7 @@ export default function Component() {
         <h2 className="text-3xl font-bold text-gray-800 mt-20 text-center">
           Our Clients
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="rounded-lg p-4">
             <Image
               alt="Walmart"
@@ -49,6 +49,31 @@ export default function Component() {
               alt="Loblaws"
               height="300"
               src="/loblaws logo.svg"
+              style={{
+                aspectRatio: "100/100",
+                objectFit: "contain",
+              }}
+              width="300"
+            />
+          </div>
+          <div className="rounded-lg p-4">
+            <Image
+              alt="Sobeys"
+              height="300"
+              src="/sobey logo.svg"
+              style={{
+                aspectRatio: "100/100",
+                objectFit: "contain",
+              }}
+              width="300"
+            />
+          </div>
+          
+          <div className="rounded-lg p-4">
+            <Image
+              alt="Food Basics"
+              height="300"
+              src="/food basics logo.svg"
               style={{
                 aspectRatio: "100/100",
                 objectFit: "contain",
